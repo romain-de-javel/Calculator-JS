@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Casio GRAPH 35+E</h1>
+    <div class="row">
+        <div class="col">
+            <p>How to Use ?</p>
+            <ol>
+                <li>Enter the first number</li>
+                <li>Select the operator</li>
+                <li>Enter the second number</li>
+                <li>Use "=" button</li>
+                <li>If you want to reset, use "AC"</li>
+            </ol>
+        </div>
+        <div class="col">
+            <form>
+                <div>
+                    <label><input type="text"  class="txt" name="input" id="input" readonly="true"></label>
+                    <label><input type="reset" class="res" nclass="but" ame="reset" id="reset" value="AC" onclick="res()"></label>
+                </div>
+                <div>
+                    <label><input type="button" class="but" name="1" id="1" value="1"onclick="addnumber(1)"></label>
+                    <label><input type="button" class="but" name="2" id="2" value="2"onclick="addnumber(2)"></label>
+                    <label><input type="button" class="but" name="3" id="3" value="3"onclick="addnumber(3)"></label>
+                    <label><input type="button" class="but" name="plus" id="plus" value='+'onclick="add()"></label>
+                </div>
+                <div>
+                    <label><input type="button" class="but" name="4" id="4" value="4"onclick="addnumber(4)"></label>
+                    <label><input type="button" class="but" name="5" id="5" value="5"onclick="addnumber(5)"></label>
+                    <label><input type="button" class="but" name="6" id="6" value="6"onclick="addnumber(6)"></label>
+                    <label><input type="button" class="but" name="mult" id="mult" value='*'onclick="multi()"></label>
+
+                </div>
+                <div>
+                    <label><input type="button" class="but" name="7" id="7" value="7"onclick="addnumber(7)"></label>
+                    <label><input type="button" class="but" name="8" id="8" value="8"onclick="addnumber(8)"></label>
+                    <label><input type="button" class="but" name="9" id="9" value="9"onclick="addnumber(9)"></label>
+                    <label><input type="button" class="but" name="minus" id="minus" value='-'onclick="minu()"></label>
+                </div>
+                <div>
+                    <label><input type="button" class="but" name="divide" id="divide" value='/'onclick="div()"></label>
+                    <label><input type="button" class="but" name="0" id="0" value="0"onclick="addnumber(0)"></label>
+                    <label><input type="button" class="but" value="." id="dot" onclick="addnumber('.')"></label>
+                    <label><input type="button" class="but" name="equal" id="equal" value='='onclick="calculate()"></label>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+    <script type="text/javascript" src="calculator.js"></script>
+    <div class="footer">Copyright &COPY;2021 Romain de Javel. All rights reserved.</div>
+</body>
+
+</html>

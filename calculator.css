@@ -1,0 +1,102 @@
+* {
+    font-family: "Londrina Solid", cursive;
+}
+
+h1 {
+    color: #fcfcfc;
+    text-align: center;
+    margin-top: 11%;
+    font-size: 55px;
+}
+
+body {
+    background: #c31432;
+    background: -webkit-linear-gradient(to left, #c31432, #240b36);
+    background: linear-gradient(to left, #c31432, #240b36);
+}
+
+form {
+    text-align: center;
+}
+
+.txt {
+    width: 190px;
+    height: 50px;
+    margin: 3px;
+    border-radius: 7px;
+    text-align: right;
+    font-size: x-large;
+    outline: none;
+    color: #2c3649;
+}
+
+.but {
+    width: 60px;
+    height: 60px;
+    padding: 15px;
+    margin: 3px;
+    font-size: large;
+    border: none;
+    border-radius: 7px;
+    background-color: #2c3649;
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.but:hover {
+    background-color: #7c7c7c;
+}
+
+.res {
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+    padding: 15px;
+    border: none;
+    border-radius: 7px;
+    background-color: #2c3649;
+    color: rgb(255, 255, 255);
+    font-size: large;
+    outline: none;
+}
+
+.res:hover {
+    background-color: #7c7c7c;
+}
+
+.row {
+    display: flex;
+    flex-direction: line;
+}
+
+.col {
+    flex: 1;
+    padding: 1em;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: x-large;
+    margin-left: 100px;
+}
+
+ol {
+    color: rgb(255, 255, 255);
+    font-size: large;
+    margin-left: 100px;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    font-size: small;
+    padding-top: 90px;
+}
+
+@media only screen and (max-width: 950px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        border: solid;
+    }
+}
